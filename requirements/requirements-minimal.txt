@@ -1,0 +1,35 @@
+# ========================================
+# MINIMAL RAG REQUIREMENTS
+# Essential dependencies for a basic RAG system
+# ========================================
+
+# Core RAG Framework
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-openai>=0.0.5
+
+# OpenAI API
+openai>=1.10.0
+
+# Vector Store
+faiss-cpu>=1.7.4
+
+# Embeddings
+sentence-transformers>=2.2.2
+
+# Document Processing
+pypdf>=4.0.0
+python-docx>=1.1.0
+
+# Web Interface
+streamlit>=1.29.0
+
+# Essential Python Libraries
+numpy>=1.24.0
+pandas>=2.0.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+requests>=2.31.0
+
+# Text Processing
+tiktoken>=0.5.0
