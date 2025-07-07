@@ -1,0 +1,19 @@
+# Development dependencies
+-r requirements.txt
+
+# Additional development tools
+pre-commit>=2.20.0
+isort>=5.10.0
+autopep8>=1.7.0
+bandit>=1.7.0
+safety>=2.0.0
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+mkdocs>=1.4.0
+mkdocs-material>=8.5.0
+
+# Performance profiling
+memory-profiler>=0.60.0
+line-profiler>=4.0.0
