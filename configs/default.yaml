@@ -1,0 +1,40 @@
+# Default configuration for RAG Publication Explorer
+
+document_processing:
+  chunk_size: 1000
+  chunk_overlap: 200
+  supported_formats:
+    - .pdf
+    - .txt
+    - .md
+    - .docx
+    - .html
+
+embeddings:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"
+  device: "cpu"
+  batch_size: 32
+  cache_dir: "./models/embeddings"
+
+vector_store:
+  type: "faiss"
+  index_path: "./data/embeddings/index.faiss"
+  metadata_path: "./data/embeddings/metadata.json"
+  dimension: 384
+
+llm:
+  model_name: "gpt-3.5-turbo"
+  max_tokens: 1000
+  temperature: 0.7
+  api_key_env: "OPENAI_API_KEY"
+
+data:
+  raw_data_path: "./data/raw"
+  processed_data_path: "./data/processed"
+  external_data_path: "./data/external"
+
+logging:
+  level: "INFO"
+  log_file: "./logs/rag_agent.log"
+  max_file_size: "10MB"
+  backup_count: 3
